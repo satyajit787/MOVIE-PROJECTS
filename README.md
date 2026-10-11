@@ -15,7 +15,7 @@ Backend evaluation project implementing role-based access control (RBAC), subscr
 
 ## Project Structure
 ```
-masai-l2-auth-subscription/
+secure-auth-subscription/
 ├── config/
 │   └── db.js                        # Database connection setup
 ├── models/
@@ -42,7 +42,7 @@ masai-l2-auth-subscription/
 
 1. **Clone the repository / navigate to project directory:**
    ```bash
-   cd masai-l2-auth-subscription
+   cd secure-auth-subscription
    ```
 
 2. **Install dependencies:**
@@ -54,9 +54,9 @@ masai-l2-auth-subscription/
    Create a `.env` file in the root directory (refer to `.env.example`):
    ```env
    PORT=8080
-   MONGO_URI=mongodb://127.0.0.1:27017/l2_subscription_auth
-   JWT_SECRET=super_secret_jwt_key_masai_2026
-   JWT_REFRESH_SECRET=super_secret_refresh_key_masai_2026
+   MONGO_URI=mongodb://127.0.0.1:27017/subscription_auth_db
+   JWT_SECRET=super_secret_jwt_access_token_key_2026
+   JWT_REFRESH_SECRET=super_secret_jwt_refresh_token_key_2026
    ```
    *(Note: Replace `MONGO_URI` with your MongoDB Atlas connection string if using cloud database)*
 
